@@ -7,7 +7,7 @@ function EquipmentSummary({ equipmentSummary }) {
             {equipmentSummary ? (
                 <div style={{
                     display: "flex",
-                    justifyContent: "center",
+                    justifyContent: "left",
                     alignItems: "center",
                     padding: "20px"
                 }}>

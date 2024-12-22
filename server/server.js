@@ -147,7 +147,7 @@ app.get('/active-membership/:memberId', async (req, res) => {
     try {
         const query = 'SELECT is_membership_active($1) AS is_active';
         const { rows } = await pool.query(query, [memberId]);
-        res.json(rows[0]); // Отправляем результат на фронт
+        res.json(rows[0]);
     } catch (error) {
         console.error('Error checking membership status:', error);
         res.status(500).json({ error: 'Failed to check membership status' });
